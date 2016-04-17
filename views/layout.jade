@@ -1,15 +1,23 @@
 doctype html
 html
   head
+    script(src='https://use.typekit.net/hvb5wwd.js')
+    script.
+      try{Typekit.load({ async: true });}catch(e){}
     meta(http-equiv="Content-Type", content="text/html; charset=utf-8")
     meta(name="viewport", content="width=device-width, initial-scale=1")
-    title #{'TITLE', community)}
+    title #{'Join Makers Academy on Slack', community}
     link(href="css/style.css", rel="stylesheet", type="text/css")
     link(href="http://fonts.googleapis.com/css?family=Lato:300,400,700,900,700italic|Open+Sans:700italic,400,600,300,700,800", rel="stylesheet", type="text/css")
-  body
+  body.tk-futura-pt
     #wrapper
       .main
-        #fixedheader Top div content
-        .header
+      #fixedheader MAKERS ACADEMY
+      link(rel="shortcut icon" type="image/png" href=
+      "file://localhost/Users/Admin/Downloads/ma-wordmark-red.png")
+      .header
         block content
-        #fixedfooter Bottom div content
+      #fixedfooter
+        link(rel='icon', type='image/png', href='../public/images/favicons/ma-white.png')
+        © Makers Academy 2016
+      

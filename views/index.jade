@@ -1,16 +1,14 @@
 extends layout
 
 block content
-          h1
-            strong #{community}
+          h1 #{community}
             h2 Enter your email below to join #{community} on slack!
-            .content
-              .information
-                form(method="POST", action="/invite")#join-form.form
+            div#container
+              form(method="POST", action="/invite")#join-form.form
                   input(type="text", name="email", placeholder="Enter Your Email Address")#slack-email.field
                   if tokenRequired
                     input(type="text", name="token", placeholder="Enter the invite token you were given")#slack-token.field
-                  input(type="submit", value="Join").submit
+                  input(type="submit", value="Join")#slack-email.submit
         script.
           var tokenRequired = #{tokenRequired};
           var form = document.getElementById('join-form');
